@@ -44,6 +44,26 @@
 
 ---
 
+### 🏆 World Builder II
+
+> Evolved the Guild from a manually maintained journal into an event-driven progression system with automated save-state management.
+
+**Unlocked:** 2026-08-06  
+**Quest:** Forge the Arcane Engine  
+**Reward:** Title unlocked — Arcane Systems Architect  
+
+---
+
+### 🏆 Arcane Systems Architect
+
+> Designed and implemented permanent Guild infrastructure that enhances all future adventures.
+
+**Unlocked:** 2026-08-06  
+**Quest:** Forge the Arcane Engine  
+**Reward:** Title — Arcane Systems Architect  
+
+---
+
 ## 🔒 Achievement Progress
 
 | Achievement | Progress | Requirement |
