@@ -34,3 +34,5 @@ crash.log
 # Temporary files
 *.tmp
 *.log
+# Local SYSTEM EVENT paste buffer
+System/Event-Drop.json

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "event_id": "YYYY-MM-DD-type-short-name-complete",
+  "date": "YYYY-MM-DD",
+  "quest_type": "main",
+  "quest_name": "Quest Name",
+  "completion_rating": 5,
+  "xp": 0,
+  "stat_deltas": {},
+  "skill_updates": {},
+  "reputation_deltas": {},
+  "achievements": [],
+  "achievement_progress": {},
+  "items": [],
+  "summary": "",
+  "evidence": [],
+  "journal_note": ""
+}
