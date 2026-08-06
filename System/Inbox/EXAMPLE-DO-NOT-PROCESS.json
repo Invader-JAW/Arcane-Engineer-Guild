@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "event_id": "2026-08-07-main-example",
+  "date": "2026-08-07",
+  "quest_type": "main",
+  "quest_name": "Example Quest \u2014 Replace Me",
+  "completion_rating": 5,
+  "xp": 50,
+  "stat_deltas": {
+    "Engineering": 1
+  },
+  "skill_updates": {
+    "Docker": {
+      "level_delta": 1,
+      "evidence": "Built and verified a working containerized application."
+    }
+  },
+  "reputation_deltas": {
+    "DevOps Guild": 0
+  },
+  "achievements": [],
+  "achievement_progress": {
+    "Docker Apprentice": 1
+  },
+  "items": [],
+  "summary": "Example event. Delete this file after setup.",
+  "evidence": [
+    "Projects/DevOps/example/"
+  ]
+}

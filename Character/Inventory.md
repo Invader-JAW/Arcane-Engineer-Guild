@@ -2,28 +2,21 @@
 
 ## Permanent Items
 
-### 📖 Guild Codex
+### 🎒 Guild Codex
 
 **Date acquired:** 2026-08-06  
 **Quest or milestone:** Found the Arcane Engineer Guild  
 **Rarity:** Legendary  
-**Related skills:** GitHub, Technical Documentation, Knowledge Management, Leadership  
+**Related skill:** Technical Documentation  
 
-The original rulebook and save-file system of the Arcane Engineer Guild. It contains the laws governing quests, XP, levels, achievements, evidence, rest, and progression.
+The original rulebook and save-file system of the Guild.
 
-**Passive effect:** Preparation that permanently improves future learning or execution is eligible for Worldbuilding XP.
-
-### 🗺️ Cartographer's Ledger
+### 🎒 Cartographer's Ledger
 
 **Date acquired:** 2026-08-06  
 **Quest or milestone:** Organized the guild repository and project folders  
 **Rarity:** Uncommon  
-**Related skills:** Organization, Documentation, Project Planning  
+**Related skill:** Project Planning  
 
-A structured map of the campaign's journals, projects, resources, evidence, and character records.
+A structured map of journals, projects, resources, evidence, and character records.
 
-**Passive effect:** Reduces the effort required to locate past work and plan the next action.
-
-## Consumables
-
-None.

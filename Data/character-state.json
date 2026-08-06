@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "character": {
+    "name": "Joshua",
+    "class": "Arcane Engineer",
+    "subclass": "Automation Wizard",
+    "campaign": "The Journey to Level 100",
+    "total_xp": 250,
+    "founding_day": "2026-08-06",
+    "current_quest": "Begin the first normal Arcane Engineer Daily Quest.",
+    "streak_days": 1
+  },
+  "stats": {
+    "Intellect": 10,
+    "Wisdom": 8,
+    "Charisma": 7,
+    "Creativity": 9,
+    "Engineering": 10,
+    "Automation": 9,
+    "Leadership": 6
+  },
+  "guild_reputation": {
+    "DevOps Guild": {
+      "rank": "Initiate",
+      "points": 0
+    },
+    "Wizard Who Crochets": {
+      "rank": "Initiate",
+      "points": 0
+    }
+  },
+  "skills": {
+    "Git": {
+      "level": 1,
+      "evidence": "Repository initialized and commits created"
+    },
+    "GitHub": {
+      "level": 1,
+      "evidence": "Guild repository created and organized"
+    },
+    "Technical Documentation": {
+      "level": 1,
+      "evidence": "README, SYSTEM.md, templates, and character records created"
+    },
+    "Knowledge Management": {
+      "level": 1,
+      "evidence": "Obsidian vault and structured journal system established"
+    },
+    "Project Planning": {
+      "level": 1,
+      "evidence": "Campaign folders, paths, and templates organized"
+    },
+    "Azure DevOps": {
+      "level": 1,
+      "evidence": "Prior practical pipeline experience"
+    },
+    "CI/CD": {
+      "level": 1,
+      "evidence": "Prior practical pipeline experience"
+    },
+    "Python": {
+      "level": 1,
+      "evidence": "Prior scripting experience"
+    },
+    "PowerShell": {
+      "level": 1,
+      "evidence": "Used to create and manage repository structure"
+    },
+    "Crochet Design": {
+      "level": 1,
+      "evidence": "Existing crochet projects and product concepts"
+    },
+    "Branding": {
+      "level": 1,
+      "evidence": "Wizard Who Crochets visual direction established"
+    },
+    "Fantasy World-Building": {
+      "level": 1,
+      "evidence": "LitRPG campaign and fantasy brand concepts created"
+    },
+    "Graphic Design": {
+      "level": 1,
+      "evidence": "Existing logo, banner, crest, and icon work"
+    },
+    "3D Modeling": {
+      "level": 1,
+      "evidence": "Existing Blender and pendant design work"
+    },
+    "3D Printing": {
+      "level": 1,
+      "evidence": "Existing potion insert and printable-object planning"
+    }
+  },
+  "achievements": [
+    {
+      "name": "Guild Founder",
+      "date": "2026-08-06",
+      "quest": "Found the Arcane Engineer Guild",
+      "description": "Established the permanent campaign foundation.",
+      "reward": "Title — Guild Founder"
+    },
+    {
+      "name": "World Builder",
+      "date": "2026-08-06",
+      "quest": "Found the Arcane Engineer Guild",
+      "description": "Built infrastructure that permanently improves future quests.",
+      "reward": "Worldbuilding quests unlocked"
+    },
+    {
+      "name": "First Quest Completed",
+      "date": "2026-08-06",
+      "quest": "Found the Arcane Engineer Guild",
+      "description": "Completed the campaign prologue.",
+      "reward": "Campaign officially activated"
+    },
+    {
+      "name": "First GitHub Project",
+      "date": "2026-08-06",
+      "quest": "Found the Arcane Engineer Guild",
+      "description": "Created and organized the Arcane Engineer Guild repository.",
+      "reward": "GitHub skill progress"
+    }
+  ],
+  "achievement_trackers": [
+    {
+      "name": "Seven-Day Streak",
+      "requirement": "Complete meaningful activity for seven days",
+      "current": 1,
+      "target": 7
+    },
+    {
+      "name": "First DevOps Artifact",
+      "requirement": "Complete a portfolio-ready DevOps deliverable",
+      "current": 0,
+      "target": 1
+    },
+    {
+      "name": "First Crochet Artifact",
+      "requirement": "Complete a Wizard Who Crochets deliverable",
+      "current": 0,
+      "target": 1
+    },
+    {
+      "name": "Docker Apprentice",
+      "requirement": "Complete five Docker quests",
+      "current": 0,
+      "target": 5
+    },
+    {
+      "name": "Silver-Tongued Engineer",
+      "requirement": "Complete five Charisma Challenges",
+      "current": 0,
+      "target": 5
+    },
+    {
+      "name": "Intellect Initiate",
+      "requirement": "Complete five Intellect Trials",
+      "current": 0,
+      "target": 5
+    }
+  ],
+  "inventory": [
+    {
+      "name": "Guild Codex",
+      "date": "2026-08-06",
+      "quest": "Found the Arcane Engineer Guild",
+      "rarity": "Legendary",
+      "meaning": "The original rulebook and save-file system of the Guild.",
+      "related_skill": "Technical Documentation"
+    },
+    {
+      "name": "Cartographer's Ledger",
+      "date": "2026-08-06",
+      "quest": "Organized the guild repository and project folders",
+      "rarity": "Uncommon",
+      "meaning": "A structured map of journals, projects, resources, evidence, and character records.",
+      "related_skill": "Project Planning"
+    }
+  ],
+  "processed_event_ids": []
+}

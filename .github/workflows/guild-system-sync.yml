@@ -1,0 +1,42 @@
+name: Guild System Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "System/Inbox/**"
+      - "Data/**"
+      - "Scripts/**"
+  workflow_dispatch:
+  schedule:
+    - cron: "37 23 * * *"
+      timezone: "America/Los_Angeles"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: guild-system-sync
+  cancel-in-progress: false
+
+jobs:
+  apply-system-events:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply SYSTEM EVENTs
+        run: python Scripts/apply_events.py --repo .
+      - name: Commit generated save state
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "Arcane Engineer System"
+          git config user.email "actions@users.noreply.github.com"
+          git add Data Character Journal System
+          git commit -m "system: apply quest completion events"
+          git push

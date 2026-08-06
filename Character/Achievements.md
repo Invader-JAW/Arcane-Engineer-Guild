@@ -2,37 +2,37 @@
 
 ## Unlocked
 
-### 🏰 Guild Founder
+### 🏆 Guild Founder
 
 **Date unlocked:** 2026-08-06  
 **Quest:** Found the Arcane Engineer Guild  
 **Reward:** Title — Guild Founder  
 
-Created the campaign's permanent foundation by establishing the GitHub repository, Obsidian vault, character sheet, folder structure, system rules, and reusable templates.
+Established the permanent campaign foundation.
 
-### 🗺️ World Builder
+### 🏆 World Builder
 
 **Date unlocked:** 2026-08-06  
 **Quest:** Found the Arcane Engineer Guild  
 **Reward:** Worldbuilding quests unlocked  
 
-Built infrastructure that permanently improves the ability to complete, document, and review future quests.
+Built infrastructure that permanently improves future quests.
 
-### 📜 First Quest Completed
+### 🏆 First Quest Completed
 
 **Date unlocked:** 2026-08-06  
 **Quest:** Found the Arcane Engineer Guild  
 **Reward:** Campaign officially activated  
 
-Completed the campaign's prologue and submitted verifiable evidence through the public repository.
+Completed the campaign prologue.
 
-### 💾 First GitHub Project
+### 🏆 First GitHub Project
 
 **Date unlocked:** 2026-08-06  
 **Quest:** Found the Arcane Engineer Guild  
 **Reward:** GitHub skill progress  
 
-Created and organized the Arcane Engineer Guild repository as a long-term learning record and portfolio foundation.
+Created and organized the Arcane Engineer Guild repository.
 
 ## In Progress
 

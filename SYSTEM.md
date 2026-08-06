@@ -906,3 +906,35 @@ The creation of the Arcane Engineer Guild repository, Obsidian vault, character 
 **Achievement:** Guild Founder  
 **Item:** Guild Codex
 
+
+
+---
+
+# Automated Save-State Rules
+
+The campaign uses an event-driven save system.
+
+## Canonical State
+
+`Data/character-state.json` is the authoritative machine-readable state for XP, stats, skill levels, achievements, reputation, and inventory.
+
+## SYSTEM EVENT
+
+After approving a completed quest, the Guild Master issues one structured SYSTEM EVENT whose numerical rewards exactly match the visible reward screen.
+
+Each event requires a unique `event_id`.
+
+## Exactly-Once Rewards
+
+Processed event IDs are recorded in canonical state. A repeated event ID must never grant rewards twice.
+
+## Reflection vs. State
+
+Quest Completion Templates remain human-readable reflection. SYSTEM EVENT JSON is the machine-readable reward transaction. Natural-language prose must not be parsed into numerical character state.
+
+## Generated Views
+
+The Character Sheet, Achievements, Inventory, and Skill Trees are rendered from canonical state.
+
+See `Docs/System-Event-Protocol.md`.
+
