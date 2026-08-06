@@ -1,22 +1,27 @@
-# Inventory
+# 🎒 Inventory
 
-## Permanent Items
+> *Artifacts mark milestones earned through real progress.*
 
-### 🎒 Guild Codex
+## ✨ Permanent Artifacts
 
-**Date acquired:** 2026-08-06  
-**Quest or milestone:** Found the Arcane Engineer Guild  
-**Rarity:** Legendary  
-**Related skill:** Technical Documentation  
+## 🟠 Guild Codex
 
-The original rulebook and save-file system of the Guild.
+**Rarity:** `LEGENDARY`  
+**Acquired:** 2026-08-06  
+**Milestone:** Found the Arcane Engineer Guild  
+**Related Skill:** Technical Documentation  
 
-### 🎒 Cartographer's Ledger
+> *The original rulebook and save-file system of the Guild.*
 
-**Date acquired:** 2026-08-06  
-**Quest or milestone:** Organized the guild repository and project folders  
-**Rarity:** Uncommon  
-**Related skill:** Project Planning  
+---
 
-A structured map of journals, projects, resources, evidence, and character records.
+## 🟢 Cartographer's Ledger
 
+**Rarity:** `UNCOMMON`  
+**Acquired:** 2026-08-06  
+**Milestone:** Organized the guild repository and project folders  
+**Related Skill:** Project Planning  
+
+> *A structured map of journals, projects, resources, evidence, and character records.*
+
+---

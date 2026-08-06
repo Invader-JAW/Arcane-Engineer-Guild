@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 import argparse, json, shutil, sys
 from datetime import datetime
 from pathlib import Path
@@ -72,30 +72,30 @@ def render(state,repo):
     for k,v in state["guild_reputation"].items(): lines.append(f"| {k} | {v['rank']} | {v['points']} |")
     lines+=["","## Current Quest","",c.get("current_quest","Awaiting quest."),"","## Latest System Event",""]
     le=c.get("last_event")
-    lines += ([f"**{le['date']} â€” {le['quest_name']}**  ",f"+{le['xp']} XP  ",le.get("summary","")] if le else ["No processed events yet."])
+    lines += ([f"**{le['date']} — {le['quest_name']}**  ",f"+{le['xp']} XP  ",le.get("summary","")] if le else ["No processed events yet."])
     (repo/"Character/Character-Sheet.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
 
     a=["# Achievements","","## Unlocked",""]
     for x in state["achievements"]:
-        a += [f"### ðŸ† {x['name']}","",f"**Date unlocked:** {x.get('date','')}  ",f"**Quest:** {x.get('quest','')}  ",f"**Reward:** {x.get('reward','')}  ","",x.get("description",""),""]
+        a += [f"### 🏆 {x['name']}","",f"**Date unlocked:** {x.get('date','')}  ",f"**Quest:** {x.get('quest','')}  ",f"**Reward:** {x.get('reward','')}  ","",x.get("description",""),""]
     a += ["## In Progress","","| Achievement | Requirement | Progress |","|---|---|---:|"]
     for t in state.get("achievement_trackers",[]): a.append(f"| {t['name']} | {t['requirement']} | {t['current']} / {t['target']} |")
     (repo/"Character/Achievements.md").write_text("\n".join(a)+"\n",encoding="utf-8")
 
     inv=["# Inventory","","## Permanent Items",""]
     for x in state["inventory"]:
-        inv += [f"### ðŸŽ’ {x['name']}","",f"**Date acquired:** {x.get('date','')}  ",f"**Quest or milestone:** {x.get('quest','')}  ",f"**Rarity:** {x.get('rarity','')}  ",f"**Related skill:** {x.get('related_skill','')}  ","",x.get("meaning",""),""]
+        inv += [f"### 🎒 {x['name']}","",f"**Date acquired:** {x.get('date','')}  ",f"**Quest or milestone:** {x.get('quest','')}  ",f"**Rarity:** {x.get('rarity','')}  ",f"**Related skill:** {x.get('related_skill','')}  ","",x.get("meaning",""),""]
     (repo/"Character/Inventory.md").write_text("\n".join(inv)+"\n",encoding="utf-8")
 
     sk=["# Skill Trees","","Skill levels represent demonstrated ability.","","| Skill | Level | Rank | Evidence |","|---|---:|---|---|"]
     for name in sorted(state["skills"]):
         d=state["skills"][name]; lv=int(d.get("level",0))
-        sk.append(f"| {name} | {lv} | {RANKS.get(lv,'Mythic')} | {d.get('evidence','â€”')} |")
+        sk.append(f"| {name} | {lv} | {RANKS.get(lv,'Mythic')} | {d.get('evidence','—')} |")
     (repo/"Character/Skill-Trees.md").write_text("\n".join(sk)+"\n",encoding="utf-8")
 
 def log_event(e,path):
     path.parent.mkdir(parents=True,exist_ok=True)
-    lines=[f"## {e['date']} â€” {e['quest_name']}","",f"**Type:** {e['quest_type']}  ",f"**XP:** +{e['xp']}  ","",e.get("summary",""),""]
+    lines=[f"## {e['date']} — {e['quest_name']}","",f"**Type:** {e['quest_type']}  ",f"**XP:** +{e['xp']}  ","",e.get("summary",""),""]
     if e.get("evidence"): lines += ["### Evidence",""]+[f"- {x}" for x in e["evidence"]]+[""]
     with path.open("a",encoding="utf-8") as f: f.write("\n".join(lines)+"\n")
 
@@ -119,10 +119,7 @@ def main():
                 print(f"REJECTED {p.name}: {ex}",file=sys.stderr)
                 shutil.move(str(p),str(rejected/p.name))
     render(state,repo); save(state_path,state)
-    import subprocess
-    subprocess.run([sys.executable, str(repo/"Scripts/render_views.py")], check=True)
-    print(f"Level {level_for_xp(state['character']['total_xp'])} â€” {state['character']['total_xp']} XP")
+    print(f"Level {level_for_xp(state['character']['total_xp'])} — {state['character']['total_xp']} XP")
 
 if __name__=="__main__":
     main()
-

@@ -1,36 +1,44 @@
-# Arcane Engineer Character Sheet
+# 🧙 Arcane Engineer
 
-**Name:** Joshua  
-**Class:** Arcane Engineer  
-**Subclass:** Automation Wizard  
-**Level:** 3  
-**Total XP:** 250  
-**XP Progress:** 250 / 450  
-**Campaign:** The Journey to Level 100  
+> *The System recognizes all progress backed by real evidence.*
 
-## Primary Stats
+```text
+═══════════════════════════════════════
+              STATUS SCREEN
+═══════════════════════════════════════
+Name       Joshua
+Class      Arcane Engineer
+Subclass   Automation Wizard
+Level      3
+XP         250 / 450
+Progress   ░░░░░░░░░░░░░░░░░░
+Campaign   The Journey to Level 100
+═══════════════════════════════════════
+```
 
-| Stat | Score |
-|---|---:|
-| Intellect | 10 |
-| Wisdom | 8 |
-| Charisma | 7 |
-| Creativity | 9 |
-| Engineering | 10 |
-| Automation | 9 |
-| Leadership | 6 |
+## 📊 Primary Stats
 
-## Guild Reputation
+| Attribute | Score | Status |
+|---|---:|---|
+| 🧠 **Intellect** | **10** | `█████░░░░░` |
+| 📚 **Wisdom** | **8** | `████░░░░░░` |
+| 🗣️ **Charisma** | **7** | `████░░░░░░` |
+| 🎨 **Creativity** | **9** | `████░░░░░░` |
+| ⚙️ **Engineering** | **10** | `█████░░░░░` |
+| ⚡ **Automation** | **9** | `████░░░░░░` |
+| 👑 **Leadership** | **6** | `███░░░░░░░` |
 
-| Guild | Rank | Points |
+## ⭐ Guild Reputation
+
+| Guild | Rank | Reputation |
 |---|---|---:|
-| DevOps Guild | Initiate | 0 |
-| Wizard Who Crochets | Initiate | 0 |
+| **DevOps Guild** | Initiate | 0 |
+| **Wizard Who Crochets** | Initiate | 0 |
 
-## Current Quest
+## ⚔ Current Quest
 
-Begin the first normal Arcane Engineer Daily Quest.
+> Begin the first normal Arcane Engineer Daily Quest.
 
-## Latest System Event
+## 🕯 Latest System Event
 
-No processed events yet.
+> No processed event yet.
