@@ -9,15 +9,15 @@
 
 ## Primary Stats
 
-| Stat | Score |
-|---|---:|
-| Intellect | 10 |
-| Wisdom | 8 |
-| Charisma | 7 |
-| Creativity | 9 |
-| Engineering | 9 |
-| Automation | 8 |
-| Leadership | 5 |
+| Stat        | Score |
+| ----------- | ----: |
+| Intellect   |    10 |
+| Wisdom      |     8 |
+| Charisma    |     7 |
+| Creativity  |     9 |
+| Engineering |     9 |
+| Automation  |     8 |
+| Leadership  |     5 |
 
 ## Guild Reputation
 
