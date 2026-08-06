@@ -1,0 +1,36 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian workspace files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Environment variables and secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Temporary files
+*.tmp
+*.log

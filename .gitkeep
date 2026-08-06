@@ -1,0 +1,5 @@
+Get-ChildItem -Directory -Recurse | ForEach-Object {
+    if (-not (Get-ChildItem $_.FullName -Force)) {
+        New-Item -ItemType File -Path (Join-Path $_.FullName ".gitkeep") | Out-Null
+    }
+}
