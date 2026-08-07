@@ -19,4 +19,5 @@
 | **Project Planning** | Apprentice | 1 | `█░░░░░░░░░` | Campaign folders, paths, and templates organized |
 | **Python** | Initiate | 2 | `██░░░░░░░░` | Prior scripting experience; Implemented an event-driven character save processor and automated rendering workflow. |
 | **Software Architecture** | Apprentice | 1 | `█░░░░░░░░░` | Improved the event-processing architecture by separating local staging, validation, immutable event creation, and processing. |
+| **Technical Communication** | Apprentice | 1 | `█░░░░░░░░░` | Explained the purpose and value of the Arcane Engineer Guild as a LitRPG-inspired personal development system. |
 | **Technical Documentation** | Initiate | 2 | `██░░░░░░░░` | README, SYSTEM.md, templates, and character records created; Documented the event protocol, save-state architecture, installation process, and automated workflow. |
