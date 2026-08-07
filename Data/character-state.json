@@ -5,21 +5,21 @@
     "class": "Arcane Engineer",
     "subclass": "Automation Wizard",
     "campaign": "The Journey to Level 100",
-    "total_xp": 730,
+    "total_xp": 750,
     "founding_day": "2026-08-06",
     "current_quest": "Begin the first normal Arcane Engineer Daily Quest.",
     "streak_days": 1,
     "last_event": {
-      "date": "2026-08-06",
-      "quest_name": "The Event Drop Pipeline",
-      "xp": 180,
-      "summary": "Replaced clipboard-based event ingestion with a staged local Event-Drop pipeline featuring validation, automatic cleanup, and Git-safe operation."
+      "date": "2026-08-07",
+      "quest_name": "Arcane Engineer Project Summary",
+      "xp": 20,
+      "summary": "Completed the Arcane Engineer project summary and communicated the purpose of the Guild to a technical audience."
     }
   },
   "stats": {
     "Intellect": 12,
     "Wisdom": 8,
-    "Charisma": 7,
+    "Charisma": 8,
     "Creativity": 9,
     "Engineering": 13,
     "Automation": 12,
@@ -99,6 +99,10 @@
     "Software Architecture": {
       "level": 1,
       "evidence": "Improved the event-processing architecture by separating local staging, validation, immutable event creation, and processing."
+    },
+    "Technical Communication": {
+      "level": 1,
+      "evidence": "Explained the purpose and value of the Arcane Engineer Guild as a LitRPG-inspired personal development system."
     }
   },
   "achievements": [
@@ -227,6 +231,7 @@
   ],
   "processed_event_ids": [
     "2026-08-06-worldbuilding-forge-arcane-engine-complete",
-    "2026-08-06-infrastructure-event-drop-pipeline-complete"
+    "2026-08-06-infrastructure-event-drop-pipeline-complete",
+    "2026-08-07-charisma-project-summary-complete"
   ]
 }

@@ -1,0 +1,35 @@
+﻿{
+    "schema_version":  1,
+    "event_id":  "2026-08-07-charisma-project-summary-complete",
+    "date":  "2026-08-07",
+    "quest_type":  "charisma",
+    "quest_name":  "Arcane Engineer Project Summary",
+    "completion_rating":  4,
+    "xp":  20,
+    "stat_deltas":  {
+                        "Charisma":  1
+                    },
+    "skill_updates":  {
+                          "Technical Communication":  {
+                                                          "level_delta":  1,
+                                                          "evidence":  "Explained the purpose and value of the Arcane Engineer Guild as a LitRPG-inspired personal development system."
+                                                      }
+                      },
+    "reputation_deltas":  {
+
+                          },
+    "achievements":  [
+
+                     ],
+    "achievement_progress":  {
+
+                             },
+    "items":  [
+
+              ],
+    "summary":  "Completed the Arcane Engineer project summary and communicated the purpose of the Guild to a technical audience.",
+    "evidence":  [
+                     "Journal/2026/August/2026-08-07.md"
+                 ],
+    "journal_note":  "Demonstrated the ability to communicate the project\u0027s vision while identifying opportunities to improve the technical explanation."
+}

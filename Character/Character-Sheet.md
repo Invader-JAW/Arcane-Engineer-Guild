@@ -10,8 +10,8 @@ Name       Joshua
 Class      Arcane Engineer
 Subclass   Automation Wizard
 Level      5
-XP         730 / 1000
-Progress   ██░░░░░░░░░░░░░░░░
+XP         750 / 1000
+Progress   ███░░░░░░░░░░░░░░░
 Campaign   The Journey to Level 100
 ═══════════════════════════════════════
 ```
@@ -22,7 +22,7 @@ Campaign   The Journey to Level 100
 |---|---:|---|
 | 🧠 **Intellect** | **12** | `██████░░░░` |
 | 📚 **Wisdom** | **8** | `████░░░░░░` |
-| 🗣️ **Charisma** | **7** | `████░░░░░░` |
+| 🗣️ **Charisma** | **8** | `████░░░░░░` |
 | 🎨 **Creativity** | **9** | `████░░░░░░` |
 | ⚙️ **Engineering** | **13** | `██████░░░░` |
 | ⚡ **Automation** | **12** | `██████░░░░` |
@@ -41,8 +41,8 @@ Campaign   The Journey to Level 100
 
 ## 🕯 Latest System Event
 
-### 2026-08-06 — The Event Drop Pipeline
+### 2026-08-07 — Arcane Engineer Project Summary
 
-**Reward:** +180 XP  
+**Reward:** +20 XP  
 
-Replaced clipboard-based event ingestion with a staged local Event-Drop pipeline featuring validation, automatic cleanup, and Git-safe operation.
+Completed the Arcane Engineer project summary and communicated the purpose of the Guild to a technical audience.

@@ -31,3 +31,14 @@ Replaced clipboard-based event ingestion with a staged local Event-Drop pipeline
 - Docs/Event-Drop-Workflow.md
 - .gitignore
 
+## 2026-08-07 â€” Arcane Engineer Project Summary
+
+**Type:** charisma  
+**XP:** +20  
+
+Completed the Arcane Engineer project summary and communicated the purpose of the Guild to a technical audience.
+
+### Evidence
+
+- Journal/2026/August/2026-08-07.md
+
