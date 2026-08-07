@@ -28,8 +28,6 @@ Complete the following:
 - Console output or screenshots showing both failed validation and successful processing.
 - Git commit.
 
-I rejected the the Quest, I'm not ready. **Quest ID:** `2026-08-07-main-engine-self-test`
-
 ---
 
 # 📖 Lore Quest
