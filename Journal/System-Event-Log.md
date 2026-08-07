@@ -16,3 +16,18 @@ Upgraded the Arcane Engineer Guild into an event-driven progression engine with 
 - Docs/System-Event-Protocol.md
 - Guild-Hall.md
 
+## 2026-08-06 â€” The Event Drop Pipeline
+
+**Type:** infrastructure  
+**XP:** +180  
+
+Replaced clipboard-based event ingestion with a staged local Event-Drop pipeline featuring validation, automatic cleanup, and Git-safe operation.
+
+### Evidence
+
+- System/Event-Drop.json
+- System/Event-Drop.example.json
+- Scripts/Import-SystemEvent.ps1
+- Docs/Event-Drop-Workflow.md
+- .gitignore
+

@@ -15,7 +15,8 @@
 | **GitHub** | Apprentice | 1 | `█░░░░░░░░░` | Guild repository created and organized |
 | **Graphic Design** | Apprentice | 1 | `█░░░░░░░░░` | Existing logo, banner, crest, and icon work |
 | **Knowledge Management** | Apprentice | 1 | `█░░░░░░░░░` | Obsidian vault and structured journal system established |
-| **PowerShell** | Initiate | 2 | `██░░░░░░░░` | Used to create and manage repository structure; Implemented clipboard-based SYSTEM EVENT import and automated guild synchronization commands. |
+| **PowerShell** | Adept | 3 | `███░░░░░░░` | Used to create and manage repository structure; Implemented clipboard-based SYSTEM EVENT import and automated guild synchronization commands.; Redesigned SYSTEM EVENT ingestion around a staged Event-Drop workflow with validation and automatic cleanup. |
 | **Project Planning** | Apprentice | 1 | `█░░░░░░░░░` | Campaign folders, paths, and templates organized |
 | **Python** | Initiate | 2 | `██░░░░░░░░` | Prior scripting experience; Implemented an event-driven character save processor and automated rendering workflow. |
+| **Software Architecture** | Apprentice | 1 | `█░░░░░░░░░` | Improved the event-processing architecture by separating local staging, validation, immutable event creation, and processing. |
 | **Technical Documentation** | Initiate | 2 | `██░░░░░░░░` | README, SYSTEM.md, templates, and character records created; Documented the event protocol, save-state architecture, installation process, and automated workflow. |
