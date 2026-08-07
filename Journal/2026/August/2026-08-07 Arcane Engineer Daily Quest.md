@@ -28,6 +28,7 @@ Complete the following:
 - Console output or screenshots showing both failed validation and successful processing.
 - Git commit.
 
+I rejected the the Quest
 ---
 
 # 📖 Lore Quest
