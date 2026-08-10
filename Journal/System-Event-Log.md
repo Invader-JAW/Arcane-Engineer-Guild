@@ -42,3 +42,17 @@ Completed the Arcane Engineer project summary and communicated the purpose of th
 
 - Journal/2026/August/2026-08-07.md
 
+## 2026-08-10 â€” The Safe Proving Grounds
+
+**Type:** daily  
+**XP:** +170  
+
+Built a disposable JSON validation lab, learned PowerShell error-handling behavior through controlled experimentation, and strengthened repository governance by protecting the default branch with a GitHub ruleset.
+
+### Evidence
+
+- Projects/DevOps/Labs/JSON-Validation/Test-Json.ps1
+- Projects/DevOps/Labs/JSON-Validation/valid-event.json
+- Projects/DevOps/Labs/JSON-Validation/malformed-event.json
+- Journal/2026/August/2026-08-10.md
+
