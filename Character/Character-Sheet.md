@@ -10,8 +10,8 @@ Name       Joshua
 Class      Arcane Engineer
 Subclass   Automation Wizard
 Level      5
-XP         750 / 1000
-Progress   ███░░░░░░░░░░░░░░░
+XP         920 / 1000
+Progress   █████████████░░░░░
 Campaign   The Journey to Level 100
 ═══════════════════════════════════════
 ```
@@ -20,19 +20,19 @@ Campaign   The Journey to Level 100
 
 | Attribute | Score | Status |
 |---|---:|---|
-| 🧠 **Intellect** | **12** | `██████░░░░` |
+| 🧠 **Intellect** | **13** | `██████░░░░` |
 | 📚 **Wisdom** | **8** | `████░░░░░░` |
 | 🗣️ **Charisma** | **8** | `████░░░░░░` |
 | 🎨 **Creativity** | **9** | `████░░░░░░` |
-| ⚙️ **Engineering** | **13** | `██████░░░░` |
-| ⚡ **Automation** | **12** | `██████░░░░` |
+| ⚙️ **Engineering** | **14** | `███████░░░` |
+| ⚡ **Automation** | **13** | `██████░░░░` |
 | 👑 **Leadership** | **7** | `████░░░░░░` |
 
 ## ⭐ Guild Reputation
 
 | Guild | Rank | Reputation |
 |---|---|---:|
-| **DevOps Guild** | Initiate | 8 |
+| **DevOps Guild** | Initiate | 12 |
 | **Wizard Who Crochets** | Initiate | 2 |
 
 ## ⚔ Current Quest
@@ -41,8 +41,8 @@ Campaign   The Journey to Level 100
 
 ## 🕯 Latest System Event
 
-### 2026-08-07 — Arcane Engineer Project Summary
+### 2026-08-10 — The Safe Proving Grounds
 
-**Reward:** +20 XP  
+**Reward:** +170 XP  
 
-Completed the Arcane Engineer project summary and communicated the purpose of the Guild to a technical audience.
+Built a disposable JSON validation lab, learned PowerShell error-handling behavior through controlled experimentation, and strengthened repository governance by protecting the default branch with a GitHub ruleset.
