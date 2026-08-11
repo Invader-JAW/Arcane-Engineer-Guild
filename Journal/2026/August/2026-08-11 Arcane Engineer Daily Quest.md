@@ -1,22 +1,61 @@
 ---
-date:
-level:
-xp_before:
-xp_after:
-status: active
-tags:
-  - daily-quest
+date: 2026-08-11
 ---
+# Daily Arcane Engineer Daily Quest — 2026-08-11
+```
+══════════════════════════════════════════════════════
+                 ARCANE ENGINEER
+                  STATUS SCREEN
+══════════════════════════════════════════════════════
 
-# Daily Quest Log — YYYY-MM-DD
+Campaign
+The Journey to Level 100
 
-## Character Status
+Class
+Arcane Engineer — Automation Wizard
 
-**Level:**  
-**XP Before:**  
-**XP After:**  
+Current Level
+5
 
-## Main Quest
+XP
+920 / 1000
+
+██████████████████░░ 92%
+
+80 XP UNTIL LEVEL 6
+
+Active Titles
+🏰 Guild Founder
+⚙ Arcane Systems Architect
+
+Primary Paths
+⚙ Senior DevOps / Site Reliability Engineer
+🧶 The Wizard Who Crochets
+
+Current Chapter
+Chapter I — Foundations of the Guild Engine
+
+Recent Progress
+✓ Safe Proving Grounds completed
+✓ PowerShell JSON validation practiced
+✓ Controlled-experiment workflow demonstrated
+✓ GitHub main branch protected
+✓ PR #3 reviewed and merged
+
+Weekday Streak
+2 completed active quest days known
+
+══════════════════════════════════════════════════════
+               TUESDAY QUEST BOARD
+                   2026-08-11
+
+              THE SECOND GATE
+       Syntax Validity → Data Validity
+══════════════════════════════════════════════════════
+```
+
+Yesterday you proved that PowerShell can distinguish **parseable JSON from malformed JSON**. Today's progression introduces an important DevOps distinction: **JSON can be syntactically valid and still contain data your automation should reject.**
+
 ## ⚙ Main Quest — Guard the Second Gate
 
 **quest_id:** `2026-08-11-main-json-semantic-validator`  
@@ -24,7 +63,7 @@ tags:
 **Type:** Guided Infrastructure Quest  
 **Estimated Time:** Standard — 30–45 min  
 **Expected XP:** **100 XP**
-### Objective
+
 **Objective:** Extend yesterday's disposable JSON lab so it distinguishes three states: malformed JSON, valid JSON with required data, and valid JSON missing required data.
 
 Continue working only inside:
@@ -174,24 +213,9 @@ This is particularly useful in CI/CD: automation doesn't have to interpret color
 **Evidence required:** `Test-TrainingEvent.ps1`, `missing-fields-event.json`, console results from all three cases, their `$LASTEXITCODE` values, and one journal sentence explaining the difference between **syntax validation** and **data validation**.
 
 **Optional Stretch Goal:** Add another training event where `"xp"` exists but contains `"ten"` instead of a number. Do not solve the problem yet. Record whether today's validator accepts it and why. That observation can become the next validation lesson.
-### Evidence
 
-### What I Did
+---
 
-### What I Learned
-
-### What Was Difficult
-
-### Guild Master Feedback
-
-### Reward
-
-- XP:
-- Stats:
-- Skills:
-- Loot:
-
-## Lore Quest
 ## 📖 Lore Quest — Exit Codes: How Scripts Speak to Automation
 
 **quest_id:** `2026-08-11-lore-process-exit-codes`  
@@ -219,19 +243,9 @@ Then answer in your journal:
 ```
 
 **Evidence required:** Your four answers.
-### Reading or Resource
 
-### Chapter or Section
+---
 
-### Lesson Learned
-
-### Real-World Connection
-
-### Guild Master Feedback
-
-### Reward
-
-## Intellect Trial
 ## 🧠 Intellect Trial — Valid Does Not Mean Acceptable
 
 **quest_id:** `2026-08-11-intellect-valid-vs-acceptable`  
@@ -267,17 +281,9 @@ Record:
 ```
 
 **Evidence required:** Your prediction and comparison with the observed result.
-### Challenge
 
-### My Reasoning
+---
 
-### My Answer
-
-### Guild Master Feedback
-
-### Reward
-
-## Charisma Challenge
 ## 🗣 Charisma Challenge — Explain the Two Gates
 
 **quest_id:** `2026-08-11-charisma-explain-two-gates`  
@@ -305,17 +311,9 @@ Does this JSON contain the data our system requires?
 Use your own words rather than copying the explanation from today's assignment.
 
 **Evidence required:** Your completed explanation in the Adventurer Journal.
-### Topic
 
-### Audience
+---
 
-### My Explanation
-
-### Guild Master Feedback
-
-### Reward
-
-## Creativity Quest
 ## 🎨 Creativity Quest — Finish the JSON Validation Portfolio Artifact
 
 **quest_id:** `2026-08-11-creativity-json-validation-readme`  
@@ -381,41 +379,42 @@ For **Next Improvement**, describe one thing the validator still cannot detect. 
 This creates a tangible portfolio artifact demonstrating **PowerShell, JSON parsing, defensive validation, testing methodology, failure classification, exit codes, documentation, and safe experimentation**.
 
 **Evidence required:** Completed `README.md` committed with the lab.
-**Path:**
 
-- [ ] The Wizard Who Crochets
-- [ ] Senior DevOps/SRE
+```
+══════════════════════════════════════════════════════
+                    QUEST REWARDS
+══════════════════════════════════════════════════════
 
-### Objective
+⚙ Guard the Second Gate                 100 XP
+📖 Process Exit Codes                    25 XP
+🧠 Valid vs. Acceptable                  20 XP
+🗣 Explain the Two Gates                 20 XP
+🎨 JSON Validation README                50 XP
+──────────────────────────────────────────────
+Maximum Available                       215 XP
 
-### Deliverable
+Current XP                              920
+XP Required for Level 6                  80
 
-### Evidence
+Potential Level-Up Today                 YES
 
-### How This Advances My Goal
+IMPORTANT:
+Crossing 1000 XP does not require completing
+every quest. Rewards will be calculated only
+from work actually completed and approved.
 
-### Guild Master Feedback
+Worldbuilding Quests       ✓ Valid Progress
+Infrastructure Quests      ✓ Valid Progress
+Micro Quests               ✓ Valid Progress
+Boss Battles               ✓ Valid Progress
+Rest & Recovery            ✓ Valid Progress
 
-### Reward
+No unfinished quest removes XP.
+══════════════════════════════════════════════════════
+```
 
-## Daily Reflection
+### Quest Completion Template Reminder
 
-### Best Accomplishment
+Keep today's immutable Quest Assignment separate from `Journal/2026/August/2026-08-11.md`. The journal should record what you **actually** completed, including commands/results, `$LASTEXITCODE` observations, predictions, evidence paths, blockers, reflections, screenshots, and each quest's status: **Complete, Partial, Deferred, Not Attempted, or Rest & Recovery**.
 
-### Biggest Lesson
-
-### Main Blocker
-
-### Next Action
-
-## Daily Rewards
-
-**Total XP Earned:**  
-
-**Stats Increased:**  
-
-**Skills Improved:**  
-
-**Achievements Unlocked:**  
-
-**Loot Acquired:**  
+After Guild Master review, I will issue a visible **SYSTEM completion screen** containing only the rewards actually approved and **one machine-readable SYSTEM EVENT JSON block whose rewards exactly match that screen**. You can then process that event through `System/Event-Drop.json` using the established Guild workflow.
