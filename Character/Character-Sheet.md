@@ -9,9 +9,9 @@
 Name       Joshua
 Class      Arcane Engineer
 Subclass   Automation Wizard
-Level      5
-XP         920 / 1000
-Progress   █████████████░░░░░
+Level      6
+XP         1065 / 1350
+Progress   ███░░░░░░░░░░░░░░░
 Campaign   The Journey to Level 100
 ═══════════════════════════════════════
 ```
@@ -20,19 +20,19 @@ Campaign   The Journey to Level 100
 
 | Attribute | Score | Status |
 |---|---:|---|
-| 🧠 **Intellect** | **13** | `██████░░░░` |
+| 🧠 **Intellect** | **14** | `███████░░░` |
 | 📚 **Wisdom** | **8** | `████░░░░░░` |
 | 🗣️ **Charisma** | **8** | `████░░░░░░` |
 | 🎨 **Creativity** | **9** | `████░░░░░░` |
-| ⚙️ **Engineering** | **14** | `███████░░░` |
-| ⚡ **Automation** | **13** | `██████░░░░` |
+| ⚙️ **Engineering** | **15** | `████████░░` |
+| ⚡ **Automation** | **14** | `███████░░░` |
 | 👑 **Leadership** | **7** | `████░░░░░░` |
 
 ## ⭐ Guild Reputation
 
 | Guild | Rank | Reputation |
 |---|---|---:|
-| **DevOps Guild** | Initiate | 12 |
+| **DevOps Guild** | Initiate | 15 |
 | **Wizard Who Crochets** | Initiate | 2 |
 
 ## ⚔ Current Quest
@@ -41,8 +41,8 @@ Campaign   The Journey to Level 100
 
 ## 🕯 Latest System Event
 
-### 2026-08-10 — The Safe Proving Grounds
+### 2026-08-12 — The Pipeline Sentinel
 
-**Reward:** +170 XP  
+**Reward:** +145 XP  
 
-Built a disposable JSON validation lab, learned PowerShell error-handling behavior through controlled experimentation, and strengthened repository governance by protecting the default branch with a GitHub ruleset.
+Turned a local PowerShell JSON validator into a pull-request CI quality gate, verified both passing and failing workflows, and demonstrated how process exit codes propagate into GitHub Actions job status.
