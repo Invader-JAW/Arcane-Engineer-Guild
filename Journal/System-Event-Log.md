@@ -56,3 +56,18 @@ Built a disposable JSON validation lab, learned PowerShell error-handling behavi
 - Projects/DevOps/Labs/JSON-Validation/malformed-event.json
 - Journal/2026/August/2026-08-10.md
 
+## 2026-08-12 â€” The Pipeline Sentinel
+
+**Type:** daily  
+**XP:** +145  
+
+Turned a local PowerShell JSON validator into a pull-request CI quality gate, verified both passing and failing workflows, and demonstrated how process exit codes propagate into GitHub Actions job status.
+
+### Evidence
+
+- .github/workflows/json-validation.yml
+- Projects/DevOps/Labs/CI-Validation/scripts/Test-Json.ps1
+- Projects/DevOps/Labs/CI-Validation/events/valid-event.json
+- Projects/DevOps/Labs/CI-Validation/events/invalid-event.json
+- Journal/2026/August/2026-08-12.md
+
