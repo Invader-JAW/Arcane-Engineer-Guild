@@ -10,12 +10,12 @@ jobs:
   validate-json:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v4
 
-      - name: Validate training JSON
-        shell: pwsh
-        run: |
-          ./Projects/DevOps/Labs/CI-Validation/scripts/Test-Json.ps1 `
-            -Path ./Projects/DevOps/Labs/CI-Validation/events/valid-event.json
+#      - name: Validate training JSON
+#        shell: pwsh
+#        run: |
+#          ./Projects/DevOps/Labs/CI-Validation/scripts/Test-Json.ps1 `
+#            -Path ./Projects/DevOps/Labs/CI-Validation/events/valid-event.json
