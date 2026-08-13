@@ -8,13 +8,13 @@
 | **3D Printing** | Apprentice | 1 | `█░░░░░░░░░` | Existing potion insert and printable-object planning |
 | **Azure DevOps** | Apprentice | 1 | `█░░░░░░░░░` | Prior practical pipeline experience |
 | **Branding** | Apprentice | 1 | `█░░░░░░░░░` | Wizard Who Crochets visual direction established |
-| **CI/CD** | Adept | 3 | `███░░░░░░░` | Prior practical pipeline experience; Added a GitHub Actions workflow for automatic SYSTEM EVENT processing and save-state synchronization.; Built a GitHub Actions pull-request validation workflow that runs a PowerShell JSON validator and produces pass/fail CI results. |
+| **CI/CD** | Specialist | 4 | `████░░░░░░` | Prior practical pipeline experience; Added a GitHub Actions workflow for automatic SYSTEM EVENT processing and save-state synchronization.; Built a GitHub Actions pull-request validation workflow that runs a PowerShell JSON validator and produces pass/fail CI results.; Configured an existing GitHub repository ruleset so the validate-json CI status check must pass before the protected branch can be updated. |
 | **Crochet Design** | Apprentice | 1 | `█░░░░░░░░░` | Existing crochet projects and product concepts |
 | **Fantasy World-Building** | Apprentice | 1 | `█░░░░░░░░░` | LitRPG campaign and fantasy brand concepts created |
 | **Git** | Apprentice | 1 | `█░░░░░░░░░` | Repository initialized and commits created |
 | **Git/GitHub** | Apprentice | 1 | `█░░░░░░░░░` | Implemented a GitHub ruleset protecting the default branch and enforcing a pull-request-based contribution workflow. |
 | **GitHub** | Apprentice | 1 | `█░░░░░░░░░` | Guild repository created and organized |
-| **GitHub Actions** | Apprentice | 1 | `█░░░░░░░░░` | Created and tested a GitHub Actions workflow using checkout, a Linux runner, PowerShell execution, and PR-triggered validation. |
+| **GitHub Actions** | Initiate | 2 | `██░░░░░░░░` | Created and tested a GitHub Actions workflow using checkout, a Linux runner, PowerShell execution, and PR-triggered validation.; Verified the required GitHub Actions check through controlled passing and failing validation runs and restored the workflow to its passing state. |
 | **Graphic Design** | Apprentice | 1 | `█░░░░░░░░░` | Existing logo, banner, crest, and icon work |
 | **Knowledge Management** | Apprentice | 1 | `█░░░░░░░░░` | Obsidian vault and structured journal system established |
 | **PowerShell** | Specialist | 4 | `████░░░░░░` | Used to create and manage repository structure; Implemented clipboard-based SYSTEM EVENT import and automated guild synchronization commands.; Redesigned SYSTEM EVENT ingestion around a staged Event-Drop workflow with validation and automatic cleanup.; Built and executed an isolated PowerShell JSON-validation lab using try/catch, ConvertFrom-Json, and ErrorAction Stop. |

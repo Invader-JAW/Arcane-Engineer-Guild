@@ -71,3 +71,17 @@ Turned a local PowerShell JSON validator into a pull-request CI quality gate, ve
 - Projects/DevOps/Labs/CI-Validation/events/invalid-event.json
 - Journal/2026/August/2026-08-12.md
 
+## 2026-08-13 â€” The Quality Gate
+
+**Type:** daily  
+**XP:** +100  
+
+Advanced an existing pull-request CI workflow into an enforced quality gate by requiring the validate-json status check before protected-branch updates.
+
+### Evidence
+
+- Journal/2026/August/2026-08-13.md
+- Step-4-Verify-the-successful-path-evidence.png
+- Step-5-Controlled-failure-test-evidence.png
+- Step-5-Good-validation-evidence.png
+
