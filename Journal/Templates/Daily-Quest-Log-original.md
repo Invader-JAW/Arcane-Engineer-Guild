@@ -14,70 +14,104 @@ tags:
 
 **Level:**  
 **XP Before:**  
-**XP After:**   
-**Status:** 
+**XP After:**  
+
 ## Main Quest
 
-### Evidence:
+### Objective
+
+### Evidence
+
+### What I Did
+
+### What I Learned
+
+### What Was Difficult
 
 ### Guild Master Feedback
 
 ### Reward
-- XP: 
+
+- XP:
+- Stats:
+- Skills:
+- Loot:
+
 ## Lore Quest
 
-### Evidence
+### Reading or Resource
 
+### Chapter or Section
+
+### Lesson Learned
+
+### Real-World Connection
 
 ### Guild Master Feedback
 
 ### Reward
 
-- XP: 
 ## Intellect Trial
 
-### Evidence
+### Challenge
 
+### My Reasoning
+
+### My Answer
 
 ### Guild Master Feedback
 
 ### Reward
 
-- XP: 
 ## Charisma Challenge
 
-### Evidence
+### Topic
 
+### Audience
+
+### My Explanation
 
 ### Guild Master Feedback
 
 ### Reward
 
-- XP: 
 ## Creativity Quest
 
 **Path:**
 
 - [ ] The Wizard Who Crochets
 - [ ] Senior DevOps/SRE
+
+### Objective
+
+### Deliverable
+
 ### Evidence
+
+### How This Advances My Goal
 
 ### Guild Master Feedback
 
 ### Reward
 
-- XP: 
+## Daily Reflection
+
+### Best Accomplishment
+
+### Biggest Lesson
+
+### Main Blocker
+
+### Next Action
 
 ## Daily Rewards
 
 **Total XP Earned:**  
 
-**Stats Increased:** 
+**Stats Increased:**  
 
 **Skills Improved:**  
 
-**Guild Reputation:** 
+**Achievements Unlocked:**  
 
-**Achievements Unlocked:** 
-
-**Loot Acquired:** 
+**Loot Acquired:**  
