@@ -5,30 +5,30 @@
     "class": "Arcane Engineer",
     "subclass": "Automation Wizard",
     "campaign": "The Journey to Level 100",
-    "total_xp": 1165,
+    "total_xp": 1285,
     "founding_day": "2026-08-06",
     "current_quest": "Begin the first normal Arcane Engineer Daily Quest.",
     "streak_days": 1,
     "last_event": {
-      "date": "2026-08-13",
-      "quest_name": "The Quality Gate",
-      "xp": 100,
-      "summary": "Advanced an existing pull-request CI workflow into an enforced quality gate by requiring the validate-json status check before protected-branch updates."
+      "date": "2026-08-14",
+      "quest_name": "The Container Forge",
+      "xp": 120,
+      "summary": "Containerized the PowerShell JSON validator in a reproducible Docker environment and verified consistent success and failure behavior through process exit codes."
     }
   },
   "stats": {
-    "Intellect": 14,
+    "Intellect": 15,
     "Wisdom": 8,
     "Charisma": 8,
     "Creativity": 9,
-    "Engineering": 16,
-    "Automation": 15,
+    "Engineering": 17,
+    "Automation": 16,
     "Leadership": 7
   },
   "guild_reputation": {
     "DevOps Guild": {
       "rank": "Initiate",
-      "points": 17
+      "points": 19
     },
     "Wizard Who Crochets": {
       "rank": "Initiate",
@@ -105,8 +105,8 @@
       "evidence": "Explained the purpose and value of the Arcane Engineer Guild as a LitRPG-inspired personal development system."
     },
     "Testing": {
-      "level": 2,
-      "evidence": "Formed a hypothesis, executed controlled valid and malformed JSON experiments, and compared predicted behavior with observed results.; Validated the same JSON checker locally and in CI, including a controlled failing test that propagated exit code 1 into a failed CI job."
+      "level": 3,
+      "evidence": "Formed a hypothesis, executed controlled valid and malformed JSON experiments, and compared predicted behavior with observed results.; Validated the same JSON checker locally and in CI, including a controlled failing test that propagated exit code 1 into a failed CI job.; Executed positive and negative container tests and verified that valid JSON returned exit code 0 while malformed JSON returned exit code 1."
     },
     "Git/GitHub": {
       "level": 1,
@@ -115,6 +115,10 @@
     "GitHub Actions": {
       "level": 2,
       "evidence": "Created and tested a GitHub Actions workflow using checkout, a Linux runner, PowerShell execution, and PR-triggered validation.; Verified the required GitHub Actions check through controlled passing and failing validation runs and restored the workflow to its passing state."
+    },
+    "Docker": {
+      "level": 1,
+      "evidence": "Built a purpose-specific Docker image containing the PowerShell JSON validator and verified successful container execution."
     }
   },
   "achievements": [
@@ -247,6 +251,7 @@
     "2026-08-07-charisma-project-summary-complete",
     "2026-08-10-daily-safe-proving-grounds-complete",
     "2026-08-12-daily-pipeline-sentinel-complete",
-    "2026-08-13-daily-quality-gate-complete"
+    "2026-08-13-daily-quality-gate-complete",
+    "2026-08-14-daily-container-forge-complete"
   ]
 }

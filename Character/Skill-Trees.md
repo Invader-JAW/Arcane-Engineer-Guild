@@ -10,6 +10,7 @@
 | **Branding** | Apprentice | 1 | `█░░░░░░░░░` | Wizard Who Crochets visual direction established |
 | **CI/CD** | Specialist | 4 | `████░░░░░░` | Prior practical pipeline experience; Added a GitHub Actions workflow for automatic SYSTEM EVENT processing and save-state synchronization.; Built a GitHub Actions pull-request validation workflow that runs a PowerShell JSON validator and produces pass/fail CI results.; Configured an existing GitHub repository ruleset so the validate-json CI status check must pass before the protected branch can be updated. |
 | **Crochet Design** | Apprentice | 1 | `█░░░░░░░░░` | Existing crochet projects and product concepts |
+| **Docker** | Apprentice | 1 | `█░░░░░░░░░` | Built a purpose-specific Docker image containing the PowerShell JSON validator and verified successful container execution. |
 | **Fantasy World-Building** | Apprentice | 1 | `█░░░░░░░░░` | LitRPG campaign and fantasy brand concepts created |
 | **Git** | Apprentice | 1 | `█░░░░░░░░░` | Repository initialized and commits created |
 | **Git/GitHub** | Apprentice | 1 | `█░░░░░░░░░` | Implemented a GitHub ruleset protecting the default branch and enforcing a pull-request-based contribution workflow. |
@@ -23,4 +24,4 @@
 | **Software Architecture** | Apprentice | 1 | `█░░░░░░░░░` | Improved the event-processing architecture by separating local staging, validation, immutable event creation, and processing. |
 | **Technical Communication** | Apprentice | 1 | `█░░░░░░░░░` | Explained the purpose and value of the Arcane Engineer Guild as a LitRPG-inspired personal development system. |
 | **Technical Documentation** | Initiate | 2 | `██░░░░░░░░` | README, SYSTEM.md, templates, and character records created; Documented the event protocol, save-state architecture, installation process, and automated workflow. |
-| **Testing** | Initiate | 2 | `██░░░░░░░░` | Formed a hypothesis, executed controlled valid and malformed JSON experiments, and compared predicted behavior with observed results.; Validated the same JSON checker locally and in CI, including a controlled failing test that propagated exit code 1 into a failed CI job. |
+| **Testing** | Adept | 3 | `███░░░░░░░` | Formed a hypothesis, executed controlled valid and malformed JSON experiments, and compared predicted behavior with observed results.; Validated the same JSON checker locally and in CI, including a controlled failing test that propagated exit code 1 into a failed CI job.; Executed positive and negative container tests and verified that valid JSON returned exit code 0 while malformed JSON returned exit code 1. |
