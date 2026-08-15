@@ -5,9 +5,9 @@
 ## DevOps Guild
 
 **Current Rank:** Initiate  
-**Reputation:** 17  
+**Reputation:** 19  
 
-`███████░░░░░░░░░░░░░`
+`████████░░░░░░░░░░░░`
 
 ## Wizard Who Crochets
 

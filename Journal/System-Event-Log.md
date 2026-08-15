@@ -85,3 +85,16 @@ Advanced an existing pull-request CI workflow into an enforced quality gate by r
 - Step-5-Controlled-failure-test-evidence.png
 - Step-5-Good-validation-evidence.png
 
+## 2026-08-14 â€” The Container Forge
+
+**Type:** daily  
+**XP:** +120  
+
+Containerized the PowerShell JSON validator in a reproducible Docker environment and verified consistent success and failure behavior through process exit codes.
+
+### Evidence
+
+- Projects/DevOps/Labs/CI-Validation/Dockerfile
+- Projects/DevOps/Labs/CI-Validation/events/invalid-event.json
+- Journal/2026/August/2026-08-14.md
+
