@@ -2,7 +2,7 @@
 date: 2026-08-14
 level: "6"
 xp_before: 1165
-status: active
+status: Complete
 tags:
   - daily-quest
 ---
