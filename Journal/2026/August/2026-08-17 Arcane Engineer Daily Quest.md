@@ -2,7 +2,7 @@
 date: 2026-08-17
 level: "6"
 xp_before: 1285
-xp_after:
+xp_after: 1385
 status: Complete
 tags:
   - daily-quest
@@ -14,7 +14,7 @@ tags:
 
 **Level:**  6
 **XP Before:**  1285
-**XP After:**   
+**XP After:**   1385
 **Status:** Complete 
 ```
 ══════════════════════════════════════════════════════
