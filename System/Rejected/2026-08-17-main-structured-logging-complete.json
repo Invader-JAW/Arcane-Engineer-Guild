@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  "1.0",
+    "event_id":  "2026-08-17-main-structured-logging-complete",
+    "date":  "2026-08-17",
+    "event_type":  "quest_completion",
+    "quest_id":  "2026-08-17-main-structured-logging",
+    "quest_name":  "Add Structured Logging to the Validator",
+    "quest_type":  "Guided Infrastructure Quest",
+    "path":  "Senior DevOps/SRE",
+    "status":  "Complete",
+    "xp":  100,
+    "review":  {
+                   "result":  "Passed",
+                   "pr":  8
+               },
+    "level_change":  {
+                         "from":  6,
+                         "to":  7,
+                         "xp_before":  1285,
+                         "xp_to_level":  65,
+                         "xp_carried_forward":  35
+                     }
+}
