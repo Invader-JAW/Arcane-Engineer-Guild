@@ -1,0 +1,683 @@
+---
+date: 2026-08-19
+level: "7"
+xp_before: 1385
+xp_after: 1385
+status: Rest & Recovery
+tags:
+  - daily-quest
+---
+
+# Daily Quest Log — YYYY-MM-DD
+
+## Character Status
+
+**Level:**  7
+**XP Before:**  1385
+**XP After:**   1385
+**Status:** Rest & Recovery
+# ⚔️ ARCANE ENGINEER — DAILY QUEST
+
+## Wednesday, August 19, 2026
+---
+```text
+
+══════════════════════════════════════════════════════
+                 ARCANE ENGINEER
+                  STATUS SCREEN
+══════════════════════════════════════════════════════
+
+Campaign       The Journey to Level 100
+Class          Arcane Engineer — Automation Wizard
+
+Level          7
+Cumulative XP  1385
+Next Threshold Canonical Level 7 threshold not yet confirmed
+
+Active Titles
+🏰 Guild Founder
+⚙ Arcane Systems Architect
+
+Primary Paths
+⚙ Senior DevOps / Site Reliability Engineer
+🧶 The Wizard Who Crochets
+
+Streak
+No penalty applied.
+2026-08-18 was Rest & Recovery.
+
+Current Chapter
+Chapter I — Foundations of the Guild Engine
+Current Focus — Observability & Reliability
+
+Recent Meaningful Progress
+✓ PowerShell JSON validation
+✓ GitHub Actions CI validation
+✓ Controlled failure testing
+✓ Required status-check merge protection
+✓ Dockerized validator
+✓ Container success path verified: exit 0
+✓ Container failure path verified: exit 1
+✓ Structured JSON logging implemented
+✓ INFO / ERROR behavior verified
+✓ Machine-readable log parsing demonstrated
+◇ August 18 — Rest & Recovery
+
+══════════════════════════════════════════════════════
+               WEDNESDAY QUEST BOARD
+                   August 19, 2026
+
+              THE CONTRACT SENTINEL
+        Make the Validator Defend Itself
+══════════════════════════════════════════════════════
+```
+---
+
+Yesterday was a valid **Rest & Recovery** day. The August 18 quests are superseded and create **no missed work, deferred obligations, XP loss, or streak penalty**.
+
+Today's progression resumes directly from your structured-logging implementation.
+
+---
+# ⚙ Main Quest — Test the Structured Logging Contract
+
+**quest_id:** `2026-08-19-main-structured-logging-tests`  
+**Type:** Guided Infrastructure Quest  
+**Path:** Senior DevOps/SRE  
+**Estimated time:** Standard — 45–60 min  
+**Expected XP:** **100 XP**
+
+### Workplace Scenario
+
+Your validator now provides two important machine-facing contracts:
+
+Structured logs
+
++
+
+Process exit codes
+
+Another engineer could unintentionally change either one.
+
+For example:
+
+ERROR logged
+
+but
+
+exit 0 returned
+
+The logs would correctly describe a failure while the CI pipeline happily reports success.
+
+Your objective today is to create an **automated regression test** that protects both contracts.
+
+---
+
+## Prerequisites
+
+Use the existing disposable lab:
+
+Projects/DevOps/Labs/CI-Validation/
+
+You should already have:
+
+scripts/Test-Json.ps1
+
+events/valid-event.json
+
+events/invalid-event.json
+
+and your existing Docker validator image/workflow.
+
+Before creating anything new, verify the existing behavior still works.
+
+### Valid fixture
+
+docker run --rm `
+
+  arcane-json-validator:observability `
+
+  -Path ./events/valid-event.json
+
+  
+
+$LASTEXITCODE
+
+Expected:
+
+INFO structured log
+
+0
+
+### Invalid fixture
+
+Run the malformed fixture.
+
+Expected:
+
+ERROR structured log
+
+1
+
+If the baseline has broken, record the blocker instead of building tests around behavior you haven't verified.
+
+---
+
+# Step 1 — Create the Test
+
+Create:
+
+Projects/DevOps/Labs/CI-Validation/tests/Test-StructuredLogging.ps1
+
+This script will become the automated contract test.
+
+---
+
+# Step 2 — Create a Simple Assertion Helper
+
+Add a reusable assertion function.
+
+For example:
+
+function Assert-Equal {
+
+    param(
+
+        $Expected,
+
+        $Actual,
+
+        [string]$Message
+
+    )
+
+  
+
+    if ($Expected -ne $Actual) {
+
+        Write-Host "FAIL: $Message"
+
+        Write-Host "Expected: $Expected"
+
+        Write-Host "Actual:   $Actual"
+
+  
+
+        exit 1
+
+    }
+
+  
+
+    Write-Host "PASS: $Message"
+
+}
+
+You may design your own assertion function if you prefer.
+
+The important behavior is:
+
+correct result
+
+    ↓
+
+PASS
+
+  
+
+incorrect result
+
+    ↓
+
+FAIL
+
+    ↓
+
+non-zero exit
+
+---
+
+# Step 3 — Test the Valid Fixture
+
+Run the validator from your test.
+
+Capture its output.
+
+Immediately capture:
+
+$exitCode = $LASTEXITCODE
+
+Do this before executing another external command.
+
+Extract the structured JSON record using the approach you discovered during the previous quest.
+
+Parse it:
+
+$parsed = $jsonLine | ConvertFrom-Json
+
+Verify:
+
+exit code     == 0
+
+level         == INFO
+
+timestamp     exists
+
+message       exists
+
+path          exists
+
+Your output should resemble:
+
+PASS: Valid fixture returned exit 0
+
+PASS: Valid fixture emitted INFO
+
+PASS: Timestamp exists
+
+PASS: Message exists
+
+PASS: Path exists
+
+---
+
+# Step 4 — Test the Invalid Fixture
+
+Repeat the process using:
+
+invalid-event.json
+
+Verify:
+
+exit code     == 1
+
+level         == ERROR
+
+timestamp     exists
+
+message       exists
+
+path          exists
+
+Expected test output:
+
+PASS: Invalid fixture returned exit 1
+
+PASS: Invalid fixture emitted ERROR
+
+PASS: Timestamp exists
+
+PASS: Message exists
+
+PASS: Path exists
+
+---
+
+# Step 5 — Make the Test CI-Friendly
+
+When every assertion succeeds, your test should end with something similar to:
+
+PASS: Structured logging contract verified
+
+and:
+
+exit 0
+
+When an assertion fails, the script must return:
+
+exit 1
+
+This makes the test usable by a CI system later.
+
+---
+
+# Step 6 — Perform a Controlled Failure Test
+
+Now prove your test can actually detect a regression.
+
+Temporarily change:
+
+Expected: INFO
+
+to:
+
+Expected: DEBUG
+
+Run the test.
+
+Expected:
+
+FAIL
+
+and:
+
+exit 1
+
+Capture the evidence.
+
+Then restore:
+
+INFO
+
+Run the test again.
+
+Expected:
+
+PASS
+
+exit 0
+
+This is important engineering evidence.
+
+A test that has only ever passed hasn't yet demonstrated that it can detect the failure it claims to protect against.
+
+---
+
+## Final Verification
+
+Your completed lab should demonstrate:
+``` console
+
+VALID JSON
+     ↓
+Validator
+     ↓
+Structured INFO
+     ↓
+exit 0
+     ↓
+Automated Test
+     ↓
+PASS
+
+
+INVALID JSON
+     ↓
+Validator
+     ↓
+Structured ERROR
+     ↓
+exit 1
+     ↓
+Automated Test
+     ↓
+PASS
+
+
+BROKEN CONTRACT
+     ↓
+Automated Test
+     ↓
+FAIL
+     ↓
+exit 1
+
+```
+### Objective
+
+Demonstrate that structured logging and process behavior are now protected by automated regression testing.
+
+### Evidence Required
+
+- `Test-StructuredLogging.ps1`
+- Valid-fixture assertions passing
+- Invalid-fixture assertions passing
+- Test script returning `exit 0`
+- Controlled failure returning `exit 1`
+- Restored test returning `exit 0`
+- Journal notes explaining what the test protects
+
+### Safety Boundary
+
+Remain entirely inside the disposable CI-Validation lab.
+
+Do **not** modify production infrastructure, cloud resources, repository secrets, credentials, external runners, or Azure resources.
+
+### Optional Stretch — +20 XP
+
+Add a short section to the existing lab README documenting:
+``` text
+
+How to run the structured logging regression test
+Expected successful result
+Meaning of a failed test
+
+```
+
+Stretch XP is awarded only if completed and reviewed.
+
+---
+
+# 📖 Lore Quest — The Reliability Vocabulary
+
+**quest_id:** `2026-08-19-lore-sli-slo-basics`  
+**Type:** Micro Quest  
+**Path:** Senior DevOps/SRE  
+**Estimated time:** Micro — 10–15 min  
+**Expected XP:** **20 XP**
+
+Learn the difference between:
+``` text
+
+SLI
+SLO
+SLA
+
+```
+
+Write one sentence explaining each concept **in your own words**.
+
+Then consider this hypothetical system:
+``` text
+
+JSON Validation Service
+Requests/day: 10,000
+
+```
+
+Choose one useful **SLI** you might measure.
+
+Examples could involve:
+``` text
+
+successful validation requests
+request latency
+service availability
+
+```
+
+Don't build monitoring infrastructure today.
+
+### Objective
+
+Begin connecting observability work to actual SRE reliability practices.
+
+### Evidence Required
+
+Your journal should contain:
+``` text
+
+SLI:
+SLO:
+SLA:
+
+Validator SLI:
+Why:
+
+```
+
+---
+
+# 🧠 Intellect Trial — The Green Pipeline Problem
+
+**quest_id:** `2026-08-19-intellect-green-pipeline-failure`  
+**Type:** Micro Quest  
+**Path:** Senior DevOps/SRE  
+**Estimated time:** Micro — 5–10 min  
+**Expected XP:** **20 XP**
+
+Consider:
+``` text
+
+Validator receives malformed JSON.
+
+Log:
+ERROR — JSON validation failed
+
+Process result:
+exit 0
+
+CI result:
+SUCCESS
+
+```
+
+Answer:
+
+> Why is this dangerous even though the log correctly says ERROR?
+
+Then explain how you would prevent the problem.
+
+Try to distinguish between:
+``` text
+
+Observability
+vs.
+Process correctness
+vs.
+Automated verification
+
+```
+
+### Evidence Required
+
+A 3–5 sentence answer in the Adventurer Journal.
+
+---
+
+# 🗣 Charisma Challenge — Explain the Failure Contract
+
+**quest_id:** `2026-08-19-charisma-failure-contract`  
+**Type:** Micro Quest  
+**Path:** Senior DevOps/SRE  
+**Estimated time:** Micro — 5–10 min  
+**Expected XP:** **15 XP**
+
+Imagine an interviewer asks:
+
+> "What should a well-designed command-line validation tool do when it encounters an error?"
+
+Give a **30–60 second spoken answer**.
+
+Try to cover:
+``` text
+
+Useful diagnostic information
+Structured output where appropriate
+Predictable exit codes
+Downstream automation
+Troubleshooting
+
+```
+
+Avoid explaining only the PowerShell syntax.
+
+Explain the **engineering reason** behind the design.
+
+### Evidence Required
+
+Write either your answer or a short summary of what you said in the journal.
+
+---
+
+# 🎨 Creativity Quest — Validator Reliability Case Study
+
+**quest_id:** `2026-08-19-creativity-validator-case-study`  
+**Type:** Portfolio Artifact  
+**Path:** Senior DevOps/SRE  
+**Estimated time:** Standard — 20–30 min  
+**Expected XP:** **25 XP**
+
+Create:
+
+Projects/DevOps/Labs/CI-Validation/docs/validator-case-study.md
+
+Use this structure:
+``` text
+
+# CI Validation — Reliability Case Study
+
+## Problem
+
+## Operational Contract
+
+## Structured Logging
+
+## Automated Verification
+
+## Reliability Value
+
+## Interview Explanation
+
+```
+
+Keep this grounded in what you've **actually built**.
+
+Don't claim Kubernetes deployments, production monitoring, cloud-scale traffic, or other capabilities that aren't part of the project.
+
+The goal is to turn the technical work into a portfolio artifact you could discuss during a Senior DevOps/SRE interview.
+
+### Objective
+
+Produce tangible evidence showing not just that you can write scripts, but that you understand:
+
+Automation
+
+Testing
+
+Observability
+
+Failure handling
+
+CI/CD reliability
+
+Operational support
+
+### Evidence Required
+
+Completed:
+
+docs/validator-case-study.md
+
+committed with the CI-Validation project.
+
+---
+
+``` text 
+
+══════════════════════════════════════════════════════
+                 AVAILABLE REWARDS
+══════════════════════════════════════════════════════
+
+⚙ Structured Logging Regression Tests       100 XP
+📖 SLI / SLO / SLA                            20 XP
+🧠 Green Pipeline Problem                     20 XP
+🗣 Failure Contract                           15 XP
+🎨 Reliability Case Study                     25 XP
+──────────────────────────────────────────────────────
+Maximum Base Reward                          180 XP
+
+Optional Main Quest Stretch                   20 XP
+──────────────────────────────────────────────────────
+Maximum With Stretch                         200 XP
+
+Complete                                      ✓
+Partial                                       ✓
+Deferred                                      ✓
+Not Attempted                                 ✓
+Rest & Recovery                               ✓
+
+No XP is lost for unfinished quests.
+No quest debt exists from August 18.
+══════════════════════════════════════════════════════
+
+```
