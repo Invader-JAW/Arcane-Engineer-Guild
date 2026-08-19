@@ -32,6 +32,6 @@ try {
 catch {
     Write-Host "FAIL: $Path contains invalid JSON."
     Write-Host $_.Exception.Message
-    Write-StructuredLog -Level "ERROR" -Message "JSON validation failed" -Path $Path
+    Write-StructuredLog -Level "ERROR" -Message "JSON validation failed" -Path $Path 
     exit 1
 }

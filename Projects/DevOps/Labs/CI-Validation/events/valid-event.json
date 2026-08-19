@@ -2,4 +2,4 @@
   "event_id": "ci-training-001",
   "service": "training-api",
   "environment": "development"
-}
+} 

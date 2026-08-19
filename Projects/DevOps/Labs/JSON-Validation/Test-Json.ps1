@@ -13,5 +13,5 @@ try {
 }
 catch {
     Write-Host "INVALID JSON" -ForegroundColor Red
-    Write-Host $_.Exception.Message -ForegroundColor Yellow
+    Write-Host $_.Exception.Message -ForegroundColor Yellow 
 }
