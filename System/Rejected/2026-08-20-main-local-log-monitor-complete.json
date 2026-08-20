@@ -1,0 +1,26 @@
+﻿{
+    "schema_version":  "1.0",
+    "event_id":  "2026-08-20-main-local-log-monitor-complete",
+    "date":  "2026-08-20",
+    "event_type":  "quest_completion",
+    "quest_id":  "2026-08-20-main-local-log-monitor",
+    "quest_name":  "Build a Local Log Monitor",
+    "quest_type":  "Guided Infrastructure Quest",
+    "path":  "Senior DevOps/SRE",
+    "status":  "Complete",
+    "xp":  120,
+    "rewards":  {
+                    "base_quest_xp":  100,
+                    "stretch_xp":  20
+                },
+    "campaign_state":  {
+                           "level":  7,
+                           "cumulative_xp_before":  1385,
+                           "cumulative_xp_after":  1505
+                       },
+    "review":  {
+                   "result":  "Passed",
+                   "pr":  10,
+                   "commit":  "577374d7c28273ded042b222dfb44dadd259d805"
+               }
+}

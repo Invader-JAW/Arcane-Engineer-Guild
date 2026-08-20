@@ -2,7 +2,7 @@
 date: 2026-08-20
 level: "7"
 xp_before: 1385
-xp_after:
+xp_after: 1505
 status: Complete
 tags:
   - daily-quest
@@ -14,7 +14,7 @@ tags:
 
 **Level:**  7
 **XP Before:**  1385
-**XP After:**   
+**XP After:**   1505
 **Status:** Complete
 # ⚔️ ARCANE ENGINEER — DAILY QUEST
 
