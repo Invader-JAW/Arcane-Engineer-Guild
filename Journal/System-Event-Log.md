@@ -98,3 +98,10 @@ Containerized the PowerShell JSON validator in a reproducible Docker environment
 - Projects/DevOps/Labs/CI-Validation/events/invalid-event.json
 - Journal/2026/August/2026-08-14.md
 
+## 2026-08-20 â€” Build a Local Log Monitor
+
+**Type:** Guided Infrastructure Quest  
+**XP:** +120  
+
+
+

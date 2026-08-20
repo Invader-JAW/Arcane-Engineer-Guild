@@ -2,10 +2,10 @@
 
 > **Continue Campaign**
 
-## 🧙 Joshua — Level 6 Automation Wizard
+## 🧙 Joshua — Level 7 Automation Wizard
 
-**XP:** 1285 / 1350  
-`████████████████████░░░░`
+**XP:** 1405 / 1750  
+`███░░░░░░░░░░░░░░░░░░░░░`
 
 ## 🗺 Campaign Menu
 

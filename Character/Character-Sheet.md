@@ -9,9 +9,9 @@
 Name       Joshua
 Class      Arcane Engineer
 Subclass   Automation Wizard
-Level      6
-XP         1285 / 1350
-Progress   ███████████████░░░
+Level      7
+XP         1405 / 1750
+Progress   ██░░░░░░░░░░░░░░░░
 Campaign   The Journey to Level 100
 ═══════════════════════════════════════
 ```
@@ -41,8 +41,6 @@ Campaign   The Journey to Level 100
 
 ## 🕯 Latest System Event
 
-### 2026-08-14 — The Container Forge
+### 2026-08-20 — Build a Local Log Monitor
 
-**Reward:** +120 XP  
-
-Containerized the PowerShell JSON validator in a reproducible Docker environment and verified consistent success and failure behavior through process exit codes.
+**Reward:** +120 XP
