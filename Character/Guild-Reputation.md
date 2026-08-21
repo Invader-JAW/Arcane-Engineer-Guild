@@ -5,7 +5,7 @@
 ## DevOps Guild
 
 **Current Rank:** Initiate  
-**Reputation:** 19  
+**Reputation:** 21  
 
 `████████░░░░░░░░░░░░`
 

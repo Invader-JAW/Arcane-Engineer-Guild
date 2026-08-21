@@ -5,30 +5,30 @@
     "class": "Arcane Engineer",
     "subclass": "Automation Wizard",
     "campaign": "The Journey to Level 100",
-    "total_xp": 1405,
+    "total_xp": 1505,
     "founding_day": "2026-08-06",
     "current_quest": "Begin the first normal Arcane Engineer Daily Quest.",
     "streak_days": 1,
     "last_event": {
-      "date": "2026-08-20",
-      "quest_name": "Build a Local Log Monitor",
-      "xp": 120,
-      "summary": ""
+      "date": "2026-08-17",
+      "quest_name": "Add Structured Logging to the Validator",
+      "xp": 100,
+      "summary": "Implemented structured JSON logging for the validator, preserved success and failure exit codes, and demonstrated machine-readable parsing."
     }
   },
   "stats": {
-    "Intellect": 15,
+    "Intellect": 16,
     "Wisdom": 8,
     "Charisma": 8,
     "Creativity": 9,
-    "Engineering": 17,
-    "Automation": 16,
+    "Engineering": 18,
+    "Automation": 17,
     "Leadership": 7
   },
   "guild_reputation": {
     "DevOps Guild": {
       "rank": "Initiate",
-      "points": 19
+      "points": 21
     },
     "Wizard Who Crochets": {
       "rank": "Initiate",
@@ -69,8 +69,8 @@
       "evidence": "Prior scripting experience; Implemented an event-driven character save processor and automated rendering workflow."
     },
     "PowerShell": {
-      "level": 4,
-      "evidence": "Used to create and manage repository structure; Implemented clipboard-based SYSTEM EVENT import and automated guild synchronization commands.; Redesigned SYSTEM EVENT ingestion around a staged Event-Drop workflow with validation and automatic cleanup.; Built and executed an isolated PowerShell JSON-validation lab using try/catch, ConvertFrom-Json, and ErrorAction Stop."
+      "level": 5,
+      "evidence": "Used to create and manage repository structure; Implemented clipboard-based SYSTEM EVENT import and automated guild synchronization commands.; Redesigned SYSTEM EVENT ingestion around a staged Event-Drop workflow with validation and automatic cleanup.; Built and executed an isolated PowerShell JSON-validation lab using try/catch, ConvertFrom-Json, and ErrorAction Stop.; Implemented structured JSON logging with INFO and ERROR severity and preserved process exit-code behavior."
     },
     "Crochet Design": {
       "level": 1,
@@ -119,6 +119,14 @@
     "Docker": {
       "level": 1,
       "evidence": "Built a purpose-specific Docker image containing the PowerShell JSON validator and verified successful container execution."
+    },
+    "Observability": {
+      "level": 1,
+      "evidence": "Added machine-readable structured telemetry to the JSON validator."
+    },
+    "Troubleshooting": {
+      "level": 1,
+      "evidence": "Diagnosed mixed human-readable and JSON output and implemented a parsing workaround."
     }
   },
   "achievements": [
@@ -253,6 +261,7 @@
     "2026-08-12-daily-pipeline-sentinel-complete",
     "2026-08-13-daily-quality-gate-complete",
     "2026-08-14-daily-container-forge-complete",
-    "2026-08-20-main-local-log-monitor-complete"
+    "2026-08-20-main-local-log-monitor-complete",
+    "2026-08-17-main-structured-logging-complete"
   ]
 }

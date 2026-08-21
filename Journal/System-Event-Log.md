@@ -105,3 +105,10 @@ Containerized the PowerShell JSON validator in a reproducible Docker environment
 
 
 
+## 2026-08-17 â€” Add Structured Logging to the Validator
+
+**Type:** Guided Infrastructure Quest  
+**XP:** +100  
+
+Implemented structured JSON logging for the validator, preserved success and failure exit codes, and demonstrated machine-readable parsing.
+
