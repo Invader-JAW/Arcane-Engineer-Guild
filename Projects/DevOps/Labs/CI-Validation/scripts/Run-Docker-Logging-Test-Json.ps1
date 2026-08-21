@@ -23,5 +23,5 @@ if ($lines.Count -ge 2) {
     $parsed.message
     $parsed.path
 } else {
-    Write-Error "Log output did not contain at least two lines."
+    Write-Error "Log output did not contain at least two lines." 
 }
