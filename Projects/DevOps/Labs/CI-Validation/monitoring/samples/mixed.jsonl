@@ -1,0 +1,7 @@
+{"timestamp":"2026-08-20T21:06:11.5059038Z","level":"INFO","message":"JSON validation succeeded","path":"./events/valid-event.json"}
+{"timestamp":"2026-08-20T21:08:11.9547324Z","level":"ERROR","message":"JSON validation failed","path":"./events/invalid-event.json"}
+{"timestamp":"2026-08-20T21:06:11.5059038Z","level":"INFO","message":"JSON validation succeeded","path":"./events/valid-event.json"}
+can not pars text
+{"timestamp":"2026-08-20T21:06:11.5059038Z","level":"INFO","message":"JSON validation succeeded","path":"./events/valid-event.json"}
+{"timestamp":"2026-08-20T21:06:11.5059038Z","level":"INFO","message":"JSON validation succeeded","path":"./events/valid-event.json"}
+{"timestamp":"2026-08-20T21:08:11.9547324Z","level":"ERROR","message":"JSON validation failed","path":"./events/invalid-event.json"}
